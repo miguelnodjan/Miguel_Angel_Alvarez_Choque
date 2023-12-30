@@ -5,13 +5,10 @@ use warnings;
 
 use CGI;
 
-# Create a new CGI object
 my $cgi = CGI->new;
-
-# Get the expression from the form
 my $expresion = $cgi->param('expresion');
 
-# Pattern to match a simple mathematical expression
+
 if ($expresion =~ /^\s*(-?\d+(\.\d+)?)\s*([\+\-\*\/])\s*(-?\d+(\.\d+)?)\s*$/) {
     my $num1 = $1;
     my $operador = $3;
@@ -19,7 +16,7 @@ if ($expresion =~ /^\s*(-?\d+(\.\d+)?)\s*([\+\-\*\/])\s*(-?\d+(\.\d+)?)\s*$/) {
 
     my $resultado;
 
-    # Perform the calculation based on the operator
+    
     if ($operador eq '+') {
         $resultado = $num1 + $num2;
     } elsif ($operador eq '-') {
@@ -34,7 +31,6 @@ if ($expresion =~ /^\s*(-?\d+(\.\d+)?)\s*([\+\-\*\/])\s*(-?\d+(\.\d+)?)\s*$/) {
         }
     }
 
-    # Print the HTML response
     print $cgi->header;
     print<<BLOCK;
     <html lang="en">
