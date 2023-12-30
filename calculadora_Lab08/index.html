@@ -16,7 +16,7 @@
     <picture><img class="logoCentral" src="LOGO_UNSA.png" width="30%" alt="logo"></picture>
     <div class="contenido">
         <h1>Calculadora Básica</h1>
-        <form action="cgi-bin/calculadora.cgi" method="post">
+        <form action="/cgi-bin/calculadora.cgi" method="post">
             <input type="text" readonly name="ecuacion">
             <table style="width:100%">
                 <tr>
@@ -47,7 +47,7 @@
                     <td>  <input type="button" value="( - )"></td>
                     <td><input type="button" value=" "></td>
                     <td><input type="button" value=" "></td>
-                    <td><input class="operador" class="botonBuscar" type="submit" value=" = ">
+                    <td><input class="operador" class="botonBuscar" type="submit" name="operacion" value="="></td>
                 </tr>
             </table>
         </form>
