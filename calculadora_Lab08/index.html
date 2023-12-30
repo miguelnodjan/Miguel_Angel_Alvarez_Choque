@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Calculadora Básica</title>
 </head>
 <body>
@@ -16,8 +17,9 @@
     <picture><img class="logoCentral" src="LOGO_UNSA.png" width="30%" alt="logo"></picture>
     <div class="contenido">
         <h1>Calculadora Básica</h1>
-        <form action="/cgi-bin/calculadora.cgi" method="post">
-            <input type="text" readonly name="ecuacion">
+        <form action="cgi-bin/calculadora2.cgi" method="post">
+            <input type="text" name="expresion" placeholder="Ingrese la expresión matemática" required>
+            <input type="submit" value="Calcular">
             <table style="width:100%">
                 <tr>
                     <td>  <input type="button" value="1"></td>

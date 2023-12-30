@@ -41,22 +41,24 @@ if ($expresion =~ /^\s*(-?\d+(\.\d+)?)\s*([\+\-\*\/])\s*(-?\d+(\.\d+)?)\s*$/) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Calculadora Básica</title>
     </head>
     <body>
         <nav class="BarraNavegacion">
             <div class="logo">
-                <picture><img src="imágenes/LOGO_UNSA.png" width="20%" alt="logo"></picture>
+                <picture><img src="LOGO_UNSA.png" width="20%" alt="logo"></picture>
             </div>
             <a href="https://www.unsa.edu.pe/">Más de UNSA </a>
             <a href="https://github.com/miguelnodjan/Miguel_Angel_Alvarez_Choque.git">Repositorio personal</a>    
         </nav>
         <picture><img class="logoCentral" src="LOGO_UNSA.png" width="30%" alt="logo"></picture>
         <div class="contenido">
-            <h1>Calculadora Básica</h1>
+            <h1>Calculadora Basica</h1>
             <form action="/cgi-bin/calculadora.cgi" method="post">
-                <input type="text" readonly name="ecuacion">
+                <input type="text"  name="ecuacion">
                 <p>Respuesta: $resultado </p>
+                <input type="submit" value="Calcular">
                 <table style="width:100%">
                     <tr>
                         <td>  <input type="button" value="1"></td>
@@ -102,12 +104,13 @@ BLOCK
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
         <title>Calculadora Básica</title>
     </head>
     <body>
         <nav class="BarraNavegacion">
             <div class="logo">
-                <picture><img src="imágenes/LOGO_UNSA.png" width="20%" alt="logo"></picture>
+                <picture><img src="LOGO_UNSA.png" width="20%" alt="logo"></picture>
             </div>
             <a href="https://www.unsa.edu.pe/">Más de UNSA </a>
             <a href="https://github.com/miguelnodjan/Miguel_Angel_Alvarez_Choque.git">Repositorio personal</a>    
@@ -116,8 +119,9 @@ BLOCK
         <div class="contenido">
             <h1>Calculadora Básica</h1>
             <form action="/cgi-bin/calculadora.cgi" method="post">
-                <input type="text" readonly name="ecuacion">
+                <input type="text"  name="ecuacion">
                 <p>Respuesta: ERROR al operar </p>
+                <input type="submit" value="Calcular">
                 <table style="width:100%">
                     <tr>
                         <td>  <input type="button" value="1"></td>
