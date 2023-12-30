@@ -16,9 +16,40 @@
     <picture><img class="logoCentral" src="LOGO_UNSA.png" width="30%" alt="logo"></picture>
     <div class="contenido">
         <h1>Calculadora Básica</h1>
-        <form action="cgi-bin/calculadora.cgi">
+        <form action="cgi-bin/calculadora.cgi" method="post">
             <input type="text" readonly name="ecuacion">
-            
+            <table style="width:100%">
+                <tr>
+                    <td>  <input type="button" value="1"></td>
+                    <td><input type="button" value="2"></td>
+                    <td><input type="button" value="3"></td>
+                    <td><input class="operador" type="button" value=" +"></td>
+                </tr>
+                <tr>
+                    <td>  <input type="button" value="4"></td>
+                    <td><input type="button" value="5"></td>
+                    <td><input type="button" value="6"></td>
+                    <td><input class="operador" type="button" value=" -"></td>
+                </tr>
+                <tr>
+                    <td>  <input type="button" value="7"></td>
+                    <td><input type="button" value="8"></td>
+                    <td><input type="button" value="9"></td>
+                    <td><input class="operador" type="button" value=" x"></td>
+                </tr>
+               <tr>
+                    <td>  <input type="button" value="("></td>
+                    <td><input type="button" value="0"></td>
+                    <td><input type="button" value=")"></td>
+                    <td><input class="operador" type="button" value=" ÷"></td>
+                </tr>
+                <tr>
+                    <td>  <input type="button" value="( - )"></td>
+                    <td><input type="button" value=" "></td>
+                    <td><input type="button" value=" "></td>
+                    <td><input class="operador" class="botonBuscar" type="submit" value=" = ">
+                </tr>
+            </table>
         </form>
     </div>
 </body>
