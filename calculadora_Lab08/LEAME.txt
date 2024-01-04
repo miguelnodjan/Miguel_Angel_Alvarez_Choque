@@ -1,0 +1,2 @@
+Para la calculadora de momento todavia no funcionan los botones puesto que requieren de JavaScript para darles su funcionalidad según investigué, pero en general si recibe correctamente los 2 números y el operador
+Video presentación de la calculadora: https://youtu.be/M5nwfaoHGQ0
